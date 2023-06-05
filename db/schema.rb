@@ -10,8 +10,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_06_02_133911) do
-  create_table "users", force: :cascade do |t|
+ActiveRecord::Schema[7.0].define(version: 2023_06_05_115640) do
+  create_table "posts", force: :cascade do |t|
     t.string "title"
     t.datetime "start_date"
     t.datetime "end_date"

@@ -6,9 +6,9 @@
  <p class="notice"><%= flash[:notice2] %></p>
 <% end %>
 
-<%= render "shared/error", obj: @user %>
+<%= render "shared/error", obj: @post %>
 
-<%= form_with model: @user do |f| %>
+<%= form_with model: @post do |f| %>
 <table>
  <tr>
   <th><%= f.label :title, "タイトル" %></th>
@@ -38,7 +38,7 @@
 
 <div class="new_show_edit">
   <%= f.submit "保存", class:"blue_botton" %>
-  <%= link_to "キャンセル", :users, class:"blue_botton" %>
+  <%= link_to "キャンセル", :posts, class:"blue_botton" %>
 </div>
 <% end %>
 
